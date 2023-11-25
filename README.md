@@ -48,4 +48,4 @@ java -jar webby.jar --help
 | 3 | Number of threads to be used | 3                            |
 
 ## Contribution
-Feel free to contribute via pull requests. Some extra knowledge is always appreciated.
+Feel free to contribute via pull requests. Some extra knowledge is always appreciated. Thank you in advance.
