@@ -3,23 +3,33 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <name>Webby</name>
+    <packaging>jar</packaging>
 
-    <groupId>com.webby</groupId>
+    <name>Webby</name>
+    <url>https://github.com/cuisse/webby</url>
+    <description>A very simple static web server using Java build in HttpServer.</description>
+
+    <groupId>io.github.cuisse</groupId>
     <artifactId>webby</artifactId>
     <version>1.0.0</version>
+
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>https://opensource.org/licenses/MIT</url>
+        </license>
+    </licenses>
 
     <developers>
         <developer>
             <name>Brayan Roman</name>
+            <url>https://github.com/cuisse</url>
         </developer>
     </developers>
 
-    <description>A very simple static web server using Java build in HttpServer.</description>
-
     <properties>
-        <maven.compiler.source>18</maven.compiler.source>
-        <maven.compiler.target>18</maven.compiler.target>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
     </properties>
 
     <build>
@@ -31,12 +41,13 @@
                     <archive>
                         <manifest>
                             <addClasspath>true</addClasspath>
-                            <mainClass>com.webby.Application</mainClass>
+                            <mainClass>io.github.cuisse.webby.Application</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
             </plugin>
         </plugins>
+        <finalName>webby</finalName>
     </build>
 
 </project>
